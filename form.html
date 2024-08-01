@@ -1,111 +1,133 @@
 <!DOCTYPE html>
 <html>
-<title>
-    Registeration form
-</title>
+    <head>
+        <title>
+            Registeration form
+        </title>
+        <style>
+            /* body {
+                align-content: center;
+                margin: 5cm;
+            } */
+    
+            .form1{
+                align-content: center;
+                margin: 5cm;
+                background-color: lightgreen;
+                padding: 5cm;
+            }
+        </style>
+
+    </head>
+
 
 <body>
-    <a href="/html.html">Home</a>
-    <h1>User Registeration</h1>
-    <hr>
-    <form action=" ">
-        <p>
-            <label>User Name: </label>
-            <input type="text" />
-        </p>
-        <p>
-            <label>Email: </label>
-            <input type="email" />
-        </p>
-        <p>
-            <label>Phone: </label>
-            <input type="number" />
-        </p>
-        <p>
-            <label>Password: </label>
-            <input type="password" />
-        </p>
-        <p>
-            <label>LinkedIn </label>
-            <input type="url" />
-        </p>
-        <p>
-            <label>DOB: </label>
-            <input type="date" />
-        </p>
-        <p>
-            <label>Message</label><br>
-            <textarea cols="30" rows="10"></textarea>
-        </p>
-        <p>
-            <label> Upload Resume: </label>
-            <input type="file" multiple />
-        </p>
-        <p>
-            <label>Gender</label>
-            <input name="Gender" type="radio"><label>Male</label>
-            <input name="Gender" type="radio"><label>Female</label>
-            <input name="Gender" type="radio"><label>N/A</label>
-        </p>
-        <!-- Checklist -->
 
-        <p>
-            <label for="">What do you want to learn?</label>
-            <br>
-            <input type="checkbox" /><label> HTML</label> <br>
-            <input type="checkbox" /><label>CSS</label> <br>
-            <input type="checkbox" /><label> JavaScript</label>
-        </p>
 
-        <p>
-            <label>Fruit list</label>
-            <select multiple>
-                <option value="">-- select --</option>
-                <option value="">Apple</option>
-                <option value="">Mango</option>
-                <option value="">Banana</option>
-            </select>
-        </p>
+        <a href="/html.html">Home</a>
+        <h1>User Registeration</h1>
         <hr>
-        <p>
-            <label>Fruit and veg list</label>
-            <select multiple>
-                <optgroup label="Fruits">
+    <div class="form1">
+
+        <form action=" ">
+            <p>
+                <label>User Name: </label>
+                <input type="text" />
+            </p>
+            <p>
+                <label>Email: </label>
+                <input type="email" />
+            </p>
+            <p>
+                <label>Phone: </label>
+                <input type="number" />
+            </p>
+            <p>
+                <label>Password: </label>
+                <input type="password" />
+            </p>
+            <p>
+                <label>LinkedIn </label>
+                <input type="url" />
+            </p>
+            <p>
+                <label>DOB: </label>
+                <input type="date" />
+            </p>
+            <p>
+                <label>Message</label><br>
+                <textarea cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <label> Upload Resume: </label>
+                <input type="file" multiple />
+            </p>
+            <p>
+                <label>Gender</label>
+                <input name="Gender" type="radio"><label>Male</label>
+                <input name="Gender" type="radio"><label>Female</label>
+                <input name="Gender" type="radio"><label>N/A</label>
+            </p>
+            <!-- Checklist -->
+
+            <p>
+                <label for="">What do you want to learn?</label>
+                <br>
+                <input type="checkbox" /><label> HTML</label> <br>
+                <input type="checkbox" /><label>CSS</label> <br>
+                <input type="checkbox" /><label> JavaScript</label>
+            </p>
+
+            <p>
+                <label>Fruit list</label>
+                <select multiple>
                     <option value="">-- select --</option>
                     <option value="">Apple</option>
                     <option value="">Mango</option>
                     <option value="">Banana</option>
-                </optgroup>
-                <optgroup label="vegies">
-                    <option value="">-- select --</option>
-                    <option value="">Apple</option>
-                    <option value="">Mango</option>
-                    <option value="">Banana</option>
-                </optgroup>
+                </select>
+            </p>
+            <hr>
+            <p>
+                <label>Fruit and veg list</label>
+                <select multiple>
+                    <optgroup label="Fruits">
+                        <option value="">-- select --</option>
+                        <option value="">Apple</option>
+                        <option value="">Mango</option>
+                        <option value="">Banana</option>
+                    </optgroup>
+                    <optgroup label="vegies">
+                        <option value="">-- select --</option>
+                        <option value="">Apple</option>
+                        <option value="">Mango</option>
+                        <option value="">Banana</option>
+                    </optgroup>
 
 
-            </select>
-        </p>
-        <p>
-            <label>Fruits and vegie list</label>
-            <input type="text" list="LinkedIn">
-            <datalist id="LinkedIn">
-                <option value="select">-- select --</option>
-                <option value="Apple">Apple</option>
-                <option value="Mango">Mango</option>
-                <option value="Banana">Banana</option>
-            </datalist>
-        </p>
-        <p>
-            <input type="checkbox">
-            <label> I accept the T&Cs
-            </label>
-        </p>
-        <p>
-            <Button>Submit</Button>
-        </p>
+                </select>
+            </p>
+            <p>
+                <label>Fruits and vegie list</label>
+                <input type="text" list="LinkedIn">
+                <datalist id="LinkedIn">
+                    <option value="select">-- select --</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Mango">Mango</option>
+                    <option value="Banana">Banana</option>
+                </datalist>
+            </p>
+            <p>
+                <input type="checkbox">
+                <label> I accept the T&Cs
+                </label>
+            </p>
+            <p>
+                <Button type="submit">Submit</Button>
+            </p>
 
-    </form>
+        </form>
+    </div>
 </body>
 
 </html>

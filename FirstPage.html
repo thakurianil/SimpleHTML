@@ -1,63 +1,56 @@
 <!DOCTYPE html>
-    <!-- To keep title name -->
-    <title>
-        Google 
-    </title>
-
-    <body>
-        <!-- margin and font size allocated -->
-        <div style="margin: 18px; font-size: medium; ">
-            <a href="https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header" style="padding-right: 10px;">About</a>
-            <a href="https://store.google.com/AU/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB&pli=1">Store</a>
-            
-            <!-- Float right to keep the contents on right side -->
-            <div style="float: right; font-size: medium;">
-                <a href="google.com/about" style="padding-right: 10px;">Gmail</a>
-                <a href="google.com/about">Image</a>
-                <a href="google.com/about" style="padding-left: 10px; padding-right: 15px;">:::</a>
-                <a href="google.com/about">Store</a>
-            
-            </div>
-
-        </div>
-        <!-- To keep image on the center using margin top and left  -->
-        <div style="margin-top: 190px; margin-left: 600px;" >
-            <img  src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" height="100" width="300">
-            <br>
-        </div>
-
-        <!-- first search form -->
-        <div style="margin-left: 600px;">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-            <!-- The form -->
-            <form class="example" action="action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-
-
-        </div>
-        <!-- first color div -->
-        <h4 style="margin-top: 450px; padding-left: 15px; background-color:beige;" >
-            Australia
-        </h4>
-        <!-- Lots of href with links working -->
-        <div style="margin-top: 0px; background-color: beige;" >
-            <div style="margin: 18px; font-size: medium; ">
-                <a href="https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header" style="padding-right: 15px; ">Advertising</a>
-                <a href="https://store.google.com/AU/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB&pli=1" style="padding-right: 15px;">Bussiness</a>
-                <a href="https://store.google.com/AU/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB&pli=1">How it works</a>
-                
-                <div style="float: right; font-size: medium;">
-                    <a href="google.com/about" style="padding-right: 15px;">Privacy</a>
-                    <a href="google.com/about">Terms</a>
-                    <a href="google.com/about" style="padding-left: 15px; padding-right: 15px;">Setting</a>
-                </div>
-    
-            </div>
-
-        </div>
-
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Form</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            /* padding: 20px; */
+            /* align-content: center; */
+        }
+        form {
+            display: inline-block;
+            /* margin-top: 20px; */
+            /* display: flex; */
+            /* align-content: center; */
+            flex-direction: row;
+            align-content: center;
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            align-content: center;
+            text-align: center;
+            border: 1px solid #ccc;
+            width: 60%;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            /* height: 50px; */
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 30%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search with Google</h1>
+    <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q" placeholder="Search Google">
+        <input type="submit" value="Search">
+    </form>
+</body>
 </html>
