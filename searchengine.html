@@ -3,56 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <title>Google</title>
     <style>
+
         .container{
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: space-between;
+            flex-direction: column;
             height: 100vh;
-            width: 100vw;
-            /* background-color: bisque; */
+            width: 95vw;
             margin: 10px;
+            /* background-color: blanchedalmond; */
+            text-align: center;
+            align-content: center;
+        }
+        button{
+            font-size: 20px;
+            height: 50px;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .navbar{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .form{
-            display: flex;
-            flex-direction: column;
-            /* background-color: aquamarine  ; */
-            height: 300px;
-            width: 40%;
-            justify-content: center;
-            align-items: center;
-        }
-        .form img{
-            height: 200px;
-            width: 40%;
-        }
-        .form input{
+            flex-wrap: wrap;
+            justify-content: space-between;
             height: 50px;
             width: auto;
+            border: none;
+            /* background-color: blanchedalmond; */
+            text-align: center;
+            align-content: center;
         }
-        .form button{
+        .footer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             height: 50px;
             width: auto;
+            /* background-color: blanchedalmond; */
+            text-align: center;
+            align-content: center;
         }
+
+        .left{
+            font-size: larger;
+            /* padding: 1cm; */
+        }
+        .left a{
+            padding: 20px;
+        }
+        .right{
+            font-size: larger;
+            /* padding: 1cm; */
+        }
+        .right a{
+            padding: 20px;
+        }
+
+        .search input{
+            border: none;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+            width: 70%;
+            /* border: double; */
+        }
+        .search{
+            display: flex;
+            justify-content: center;
+            /* text-align: center; */
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        section{
+            /* background-color: aquamarine; */
+            width: 30%;
+            border-style: groove;
+            text-align: center;
+            border-radius: 30px;
+            padding: 10px;
+            opacity: 50%;
+        }
+        section i{
+            padding: 10px;
+            font-size: 20px;
+            color: blue;
+        }
+
+
     </style>
 
 </head>
 
 <body>
     <div class="container">
+        <div class="navbar">
+            <div class="left">
+                <a href="about">About</a>
+                <a href="store">Store</a>
+            </div>
+            <div class="right">
+                <a href="Gmail">Gmail</a>
+                <a href="Images">Images</a>
+                
+                <a href="about">Profile</a>
+
+                
+            </div>
+        </div>
         <div class="form">
-            <img src="./image/Travel.jpeg" alt="">
+            <img src="./image/a.jpeg" alt="">
             <div class="formimg">
                 <form action="" method="get">
-                    <input placeholder="Search" name="q">
-                    <button type="submit">Submit</button>
+
+                    <div class="search">
+                        <section>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input placeholder="" name="q">
+                            <i class="fa-solid fa-microphone"></i>
+                            <i class="fa-solid fa-camera"></i>
+                        </section>
+
+                    </div>
+                    <button type="submit">Google Search</button>
+                    <button type="submit">I'm Feeling Lucky</button>
+
                 </form>
             </div>
  
         </div>
 
+
+        <div class="footer">
+            <div class="left">
+                <a href="about">Advertising</a>
+                <a href="store">Business</a>
+                <a href="store">How Search works</a>
+
+            </div>
+            <div class="right">
+                <a href="Gmail">Privacy</a>
+                <a href="Images">Terms</a>
+                
+                <a href="about">Setting</a>
+
+                
+            </div>
+        </div>
     </div>
     
 </body>
