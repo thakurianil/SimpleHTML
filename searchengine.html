@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <title>Google</title>
     <style>
-
-        .container{
+        .container {
             display: flex;
             justify-content: space-between;
             flex-direction: column;
@@ -17,17 +17,25 @@
             text-align: center;
             align-content: center;
         }
-        button{
-            font-size: large;
-            height: 50px;
-            width: auto;
-            padding: 10px;
-            margin: 10px;
-            border: none;
-            border-radius: 20px;
+
+        button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
         }
 
-        .navbar{
+        .navbar {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -37,7 +45,8 @@
             text-align: center;
             align-content: center;
         }
-        .footer{
+
+        .footer {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -47,51 +56,67 @@
             align-content: center;
         }
 
-        .left{
+        .left {
             font-size: larger;
         }
-        .left a{
+
+        .left a {
             padding: 20px;
         }
-        .right{
+
+        .right {
             font-size: larger;
         }
-        .right a{
+
+        .right a {
             padding: 20px;
         }
-        .form{
+
+        .form {
             margin-top: -10%;
         }
 
-        .search input{
+        .search input {
             border: none;
             font-size: 20px;
             margin: 10px;
-            width: 55%;
+            /* width: 55%; */
+            outline: none;
+
         }
-        .search{
+
+        .search {
             display: flex;
             justify-content: center;
+            padding: 5px 8px 0 14px;
+            flex: 1;
         }
-        a{
+
+        a {
             text-decoration: none;
             color: black;
         }
-        a:hover{
+
+        a:hover {
             text-decoration: underline;
         }
-        section{
-            border-style: groove;
-            border-radius: 30px;
-            opacity: 50%;
+
+        section {
+            border: 1px solid #dfe1e5;
+            box-shadow: none;
+            border-radius: 24px;
+            margin: 0 auto;
+            width: 800px;
+            width: auto;
+            max-width: 584px
+  
         }
-        section i{
+
+        section i {
             padding: 10px;
             font-size: 20px;
             color: blue;
         }
-
-
     </style>
 
 </head>
@@ -103,8 +128,10 @@
         <div class="navbar">
             <!-- Navbar left side -->
             <div class="left">
-                <a href="https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header">About</a>
-                <a href="https://store.google.com/AU/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a>
+                <a
+                    href="https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header">About</a>
+                <a
+                    href="https://store.google.com/AU/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a>
             </div>
             <!-- Navbar Right side -->
             <div class="right">
@@ -113,7 +140,7 @@
                 <i class="fa-solid fa-list"></i>
                 <a href="about"><i class="fa-solid fa-circle-user"></i></a>
 
-                
+
             </div>
         </div>
         <!-- Center image and form part -->
@@ -138,15 +165,17 @@
 
                 </form>
             </div>
- 
+
         </div>
 
         <!-- footer part -->
         <div class="footer">
             <!-- Footer left side -->
             <div class="left">
-                <a href="https://ads.google.com/intl/en_au/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
-                <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
+                <a
+                    href="https://ads.google.com/intl/en_au/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                <a
+                    href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
                 <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
 
             </div>
@@ -154,13 +183,14 @@
             <div class="right">
                 <a href="https://policies.google.com/privacy?hl=en-AU&fg=1">Privacy</a>
                 <a href="https://policies.google.com/terms?hl=en-AU&fg=1">Terms</a>
-                
+
                 <a href="about">Setting</a>
 
-                
+
             </div>
         </div>
     </div>
-    
+
 </body>
+
 </html>
